@@ -2,3 +2,12 @@ http:
   host: 'localhost'
   port: 8080
 
+auth:
+  auth0:
+    issuer: 'https://dev-v8y3pwd5.us.auth0.com/'
+    audience: 'http://localhost:8080'
+    domain: 'dev-v8y3pwd5.us.auth0.com'
+    client:
+      id: 'BC5hMAYHYBnnxV8ZW0fClR21gaKo02FC'
+      secret: 'vbgK5n2PkKgzzByUhOeunX4nUjbFWt05oQj63cG8EjDvRnZFhbY5QoRTpQRfGpGZ'
+
