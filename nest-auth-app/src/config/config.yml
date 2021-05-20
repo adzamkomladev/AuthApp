@@ -1,12 +1,12 @@
 http:
   host: 'localhost'
-  port: 8080
+  port: 8000
 
 db:
   mysql:
     type: 'mysql'
     host: 'localhost'
-    port: 5432
+    port: 3306 
     database: 'auth_app'
     username: 'root'
     password: ''
@@ -16,9 +16,9 @@ db:
 auth:
   auth0:
     issuer: 'https://dev-v8y3pwd5.us.auth0.com/'
-    audience: 'http://localhost:8080'
+    audience: 'http://localhost:8000'
     domain: 'dev-v8y3pwd5.us.auth0.com'
     client:
-      id: 'BC5hMAYHYBnnxV8ZW0fClR21gaKo02FC'
-      secret: 'vbgK5n2PkKgzzByUhOeunX4nUjbFWt05oQj63cG8EjDvRnZFhbY5QoRTpQRfGpGZ'
+      id: 'CYezkyAYZxjRU28JIsjE9zWWmA2p8Y2l'
+      secret: 'pc2v4xr9810XC9klK9kinUkch8cQG-Sy8mtA0e1GFGZZH1odgAE3WI3htnQ1XHI3'
 

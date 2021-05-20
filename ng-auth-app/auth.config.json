@@ -1,4 +1,5 @@
 {
   "domain": "dev-v8y3pwd5.us.auth0.com",
-  "clientId": "CYezkyAYZxjRU28JIsjE9zWWmA2p8Y2l"
+  "clientId": "CYezkyAYZxjRU28JIsjE9zWWmA2p8Y2l",
+  "audience": "http://localhost:8000"
 }

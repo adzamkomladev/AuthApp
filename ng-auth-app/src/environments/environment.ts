@@ -6,7 +6,7 @@ export const environment = {
     ...authConfig,
     redirectUri: window.location.origin,
   },
-  endpoint: 'http://localhost:8080'
+  endpoint: 'http://localhost:8000'
 };
 
 /*

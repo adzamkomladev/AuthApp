@@ -13,9 +13,9 @@ import { User } from './entities/user.entity';
 @Module({
   imports: [
     TypeOrmModule.forFeature([User]),
-    PassportModule.register({ defaultStrategy: 'auth0-jwt' })
+    PassportModule.register({ defaultStrategy: 'auth0-jwt' }),
   ],
   controllers: [AuthController],
-  providers: [Auth0JwtStrategy, AuthService]
+  providers: [Auth0JwtStrategy, AuthService],
 })
 export class AuthModule {}

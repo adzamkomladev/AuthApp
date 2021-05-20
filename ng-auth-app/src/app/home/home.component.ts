@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { UserService } from '../@common/services/user.service';
+
 import { User } from '../@common/models/user.model';
 
 @Component({
