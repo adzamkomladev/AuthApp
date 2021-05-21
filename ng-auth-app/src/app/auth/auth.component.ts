@@ -59,6 +59,14 @@ export class AuthComponent implements OnInit {
     this.initScrollAnimations();
   }
 
+  login() {
+    this.authService.loginWithRedirect();
+  }
+
+  signUp() {
+    this.authService.loginWithRedirect({ screen_hint: 'signup' });
+  }
+
   initScrollAnimations(): void {
     gsap.to(this.imageFirst.nativeElement, {
       scrollTrigger: {

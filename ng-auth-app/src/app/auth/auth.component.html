@@ -6,9 +6,9 @@
       <li class="menu__item"><a class="menu__link">How it Works</a></li>
       <li class="menu__item"><a class="menu__link">Testimonials</a></li>
     </ul>
-    <ul class="menu menu-right" #menuRight>
-      <li class="menu__item"><a class="menu__link">Login</a></li>
-      <li class="menu__item"><a class="menu__link">Sign Up</a></li>
+    <ul *ngIf="!(isAuthenticated$ | async)" class="menu menu-right" #menuRight>
+      <li class="menu__item"><a (click)="login()" class="menu__link">Login</a></li>
+      <li class="menu__item"><a (click)="signUp()" class="menu__link">Sign Up</a></li>
     </ul>
   </header>
 

@@ -1,1 +1,15 @@
-<p>{{ user$ |async |json }}</p>
+<div class="main">
+  <header class="header">
+    <ul class="menu" #menuLeft>
+      <li class="menu__item"><a class="menu__link">Home</a></li>
+      <li class="menu__item"><a class="menu__link">Donate</a></li>
+      <li class="menu__item"><a class="menu__link">Benefits</a></li>
+    </ul>
+    <ul class="menu menu-right" #menuRight>
+      <li class="menu__item"><a class="menu__link">Profile</a></li>
+      <li class="menu__item"><a class="menu__link">Logout</a></li>
+    </ul>
+  </header>
+
+  <p>{{ user$ |async |json }}</p>
+</div>
