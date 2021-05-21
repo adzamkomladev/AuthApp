@@ -1,8 +1,61 @@
-<h2>Welcome to Project101 auth application</h2>
+<div class="main">
+  <header class="header">
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link">Home</a></li>
+      <li class="menu__item"><a class="menu__link">About Us</a></li>
+      <li class="menu__item"><a class="menu__link">How it Works</a></li>
+      <li class="menu__item"><a class="menu__link">Testimonials</a></li>
+    </ul>
+    <ul class="menu menu-right">
+      <li class="menu__item"><a class="menu__link">Login</a></li>
+      <li class="menu__item"><a class="menu__link">Sign Up</a></li>
+    </ul>
+  </header>
 
-<h5>Please select below!</h5>
+  <div class="first-section">
+    <div class="info">
+      <h1 class="header-1">Software development NGO for the less privileged.</h1>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus exercitationem perferendis
+        dolorem atque consequatur incidunt minus modi.
+      </p>
+      <a class="btn btn--start">Get Started</a>
+    </div>
+    <div class="visuals">
+      <div class="image-container">
+        <img src="../../assets/p1.jpeg" alt="">
+      </div>
+      <div class="image-container">
+        <img src="../../assets/p2.jpeg" alt="">
+      </div>
+    </div>
+  </div>
 
-<div *ngIf="!(isAuthenticated$ | async)">
+  <div class="second-section">
+    <div class="box"></div>
+    <h4 id="about" class="heading-4">About Us</h4>
+    <h1 id="buy" class="heading-1">Spreading the gospel of Software Development to the less privileged.</h1>
+    <div class="info-1">
+      <div class="info-1__text">
+        <span class="quote">"</span>
+        <h3 class="heading-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h3>
+        <p class="paragraph">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusantium, tempore eligendi laboriosam
+          praesentium alias voluptatem commodi vitae delectus cumque, sequi expedita eaque, laudantium consectetur esse
+          eum dolor? Culpa, hic.
+        </p>
+        <a class="btn-learn">Learn More</a>
+      </div>
+      <div class="info-1__visual">
+        <img src="../../assets/p4.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="!(isAuthenticated$ | async)">
   <auth-app-login-button></auth-app-login-button>
   <auth-app-sign-up-button></auth-app-sign-up-button>
-</div>
+</div> -->
