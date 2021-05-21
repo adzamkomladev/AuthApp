@@ -1,12 +1,12 @@
 <div class="main">
   <header class="header">
-    <ul class="menu">
+    <ul class="menu" #menuLeft>
       <li class="menu__item"><a class="menu__link">Home</a></li>
       <li class="menu__item"><a class="menu__link">About Us</a></li>
       <li class="menu__item"><a class="menu__link">How it Works</a></li>
       <li class="menu__item"><a class="menu__link">Testimonials</a></li>
     </ul>
-    <ul class="menu menu-right">
+    <ul class="menu menu-right" #menuRight>
       <li class="menu__item"><a class="menu__link">Login</a></li>
       <li class="menu__item"><a class="menu__link">Sign Up</a></li>
     </ul>
@@ -14,7 +14,7 @@
 
   <div class="first-section">
     <div class="info">
-      <h1 class="header-1">Software development NGO for the less privileged.</h1>
+      <h1 class="heading-1">Software development NGO for the less privileged.</h1>
       <p class="paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus exercitationem perferendis
         dolorem atque consequatur incidunt minus modi.
@@ -23,15 +23,15 @@
     </div>
     <div class="visuals">
       <div class="image-container">
-        <img src="../../assets/p1.jpeg" alt="">
+        <img #imageFirst src="../../assets/p1.jpeg" alt="">
       </div>
       <div class="image-container">
-        <img src="../../assets/p2.jpeg" alt="">
+        <img #imageSecond src="../../assets/p2.jpeg" alt="">
       </div>
     </div>
   </div>
 
-  <div class="second-section">
+  <div class="second-section" #secondSection>
     <div class="box"></div>
     <h4 id="about" class="heading-4">About Us</h4>
     <h1 id="buy" class="heading-1">Spreading the gospel of Software Development to the less privileged.</h1>
