@@ -11,5 +11,18 @@
     </ul>
   </header>
 
-  <p>{{ user$ |async |json }}</p>
+  <div class="first-section" *ngIf="user$ | async as user">
+    <div class="info">
+      <h1 class="heading-1">Hello {{ user.name }}!</h1>
+      <p class="paragraph">
+        <p>Your email: {{ user.email }}</p>
+      </p>
+      <a class="btn btn--start">Get Started</a>
+    </div>
+    <div class="visuals">
+      <div class="image-container">
+        <img #imageFirst [src]="user.avatar" alt="">
+      </div>
+    </div>
+  </div>
 </div>
