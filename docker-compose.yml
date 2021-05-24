@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  angular:
+    build: ng-auth-app
+    depends_on:
+      - nest
+    networks:
+      - webnet
+    ports:
+      - "4200:4200"
+
+  nest:
+    build: nest-auth-app
+    depends_on:
+      - database
+    networks:
+      - webnet
+    ports:
+      - "8000:8000"
+
+  database:
+    image: mysql
+    restart: always
+    networks:
+      - webnet
+    ports:
+      - "3306:3306"
+
+networks:
+  webnet:
