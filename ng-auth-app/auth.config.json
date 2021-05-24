@@ -1,5 +1,6 @@
 {
   "domain": "dev-v8y3pwd5.us.auth0.com",
   "clientId": "CYezkyAYZxjRU28JIsjE9zWWmA2p8Y2l",
-  "audience": "http://localhost:8000"
+  "audience": "http://localhost:8000",
+  "responseType": "id_token token"
 }

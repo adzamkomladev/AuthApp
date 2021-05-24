@@ -21,11 +21,14 @@ services:
 
   database:
     image: mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: "auth_app"
     restart: always
     networks:
       - webnet
     ports:
-      - "3306:3306"
+      - "8001:3306"
 
 networks:
   webnet:
