@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+
+import { AuthService } from '@auth0/auth0-angular';
 
 import { Observable } from 'rxjs';
 
@@ -13,9 +16,17 @@ import { User } from '../@common/models/user.model';
 export class HomeComponent implements OnInit {
   user$!: Observable<User>;
 
-  constructor(private readonly userService: UserService) {}
+  constructor(
+    @Inject(DOCUMENT) private doc: Document,
+    private readonly auth: AuthService,
+    private readonly userService: UserService
+  ) {}
 
   ngOnInit(): void {
     this.user$ = this.userService.currentUser();
+  }
+
+  onLogout() {
+    this.auth.logout({ returnTo: this.doc.location.origin });
   }
 }

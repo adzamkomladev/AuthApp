@@ -1,4 +1,11 @@
-it('loads examples', () => {
-  cy.visit('/');
-  cy.contains('Replace me with something relevant');
+it('loads auth page', () => {
+  cy.visit('/auth');
+  cy.contains('Software development NGO for the less privileged.');
 });
+
+it('loads home page', () => {
+  cy.visit('/home');
+  cy.contains('Hello.');
+});
+
+
